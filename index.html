@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="interactive-bg"></div>
+        <div class="hero-content">
+            <h1>Jordan Burton</h1>
+            <p class="subtitle">Aspiring Software Engineer</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a 3rd-year Computer Science student at Western University. With a strong foundation in programming and a passion for creating innovative solutions, I actively contribute to various tech communities and open-source projects.</p>
+                <div class="education-info">
+                    <h3>Education</h3>
+                    <p><strong>Western University</strong> - London, ON</p>
+                    <p>Specialization in Computer Science | Expected graduation: Apr. 2026</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Foundations of Programming</li>
+                        <li>Discrete Math</li>
+                        <li>Computer Organization</li>
+                        <li>Organization of Computer Languages</li>
+                        <li>Software Tools and Systems Programming</li>
+                        <li>Applied Logic for Computing</li>
+                        <li>Databases I</li>
+                        <li>Operating Systems</li>
+                        <li>Intro into Software Engineering</li>
+                    </ul>
+                    <h4>Clubs & Organizations:</h4>
+                    <ul>
+                        <li>Western AI</li>
+                        <li>Computer Science Undergraduate Society</li>
+                        <li>Western Cyber Society</li>
+                        <li>Pangea</li>
+                        <li>National Society of Black Engineers (NSBE)</li>
+                        <li>ColorStack</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Software Engineer</h3>
+                    <p class="company">Project Regen</p>
+                    <p class="date">January 2025 - Present</p>
+                    <p class="location">Remote</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>AI Developer/Trainer</h3>
+                    <p class="company">Outlier</p>
+                    <p class="date">December 2024 - Present</p>
+                    <p class="location">Remote</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Undergraduate Assistant</h3>
+                    <p class="company">Western University</p>
+                    <p class="date">September 2024 - December 2024</p>
+                    <p class="location">London, ON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Stock-Market.jpg" alt="Stock Anomaly Detection">
+                </div>
+                <div class="project-content">
+                    <h3>Real-Time Anomaly Detection for Stock Market</h3>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Quix</span>
+                        <span>Docker</span>
+                        <span>Redpanda</span>
+                        <span>FTP</span>
+                    </div>
+                    <p class="project-date">January 2025</p>
+                    <p class="project-description">Built a real-time data pipeline to detect anomalies in stock market data using Quix Streams and Redpanda. Designed a stock market data producer to fetch and stream live data via FTP, processed it in real-time, and deployed an Isolation Forest model to identify irregularities in stock price trends.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Jordanb1618/Real-Time-Anomaly-Detection-for-Stock-Market" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Music-mood.jpg" alt="Music Mood Recommendation">
+                </div>
+                <div class="project-content">
+                    <h3>Music Mood Recommendation System</h3>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LibROSA</span>
+                        <span>TensorFlow</span>
+                        <span>Pandas</span>
+                    </div>
+                    <p class="project-date">November 2024</p>
+                    <p class="project-description">Developed an ML pipeline that achieved 82.9% accuracy in mood classification and 3.2× faster inference by optimizing a DNN model, reducing memory footprint by 47% and deploying an end-to-end solution with automated feature caching.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Jordanb1618/Music_Mood_Analyzer" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Gym-app.jpg" alt="Fitness Tracking App">
+                </div>
+                <div class="project-content">
+                    <h3>Full Stack Fitness Tracking App</h3>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Python/Node.js</span>
+                        <span>AWS</span>
+                    </div>
+                    <p class="project-date">November 2024</p>
+                    <p class="project-description">Developed a cross-platform mobile app for tracking fitness progress, leveraging AWS services for authentication, storage, and analytics.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Jordanb1618/ProcTrack" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/ram-optimzer.jpg" alt="RAM Optimizer">
+                </div>
+                <div class="project-content">
+                    <h3>Efficient RAM Optimizer</h3>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Linux</span>
+                        <span>System Programming</span>
+                    </div>
+                    <p class="project-date">September 2024</p>
+                    <p class="project-description">Created a system-level RAM optimization tool that improved memory usage efficiency by 45% and reduced system lag by 32% through intelligent process management and memory allocation strategies.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Jordanb1618/RAM-OPTIMIZER" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="technologies">
+        <h2>Technologies</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <i class="devicon-java-plain tech-icon"></i>
+                <span class="tech-name">Java</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-python-plain tech-icon"></i>
+                <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-c-plain tech-icon"></i>
+                <span class="tech-name">C</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-javascript-plain tech-icon"></i>
+                <span class="tech-name">JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-cplusplus-plain tech-icon"></i>
+                <span class="tech-name">C++</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-r-original tech-icon"></i>
+                <span class="tech-name">R</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-html5-plain tech-icon"></i>
+                <span class="tech-name">HTML5</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-css3-plain tech-icon"></i>
+                <span class="tech-name">CSS3</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-mysql-plain tech-icon"></i>
+                <span class="tech-name">SQL</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-microchip tech-icon"></i>
+                <span class="tech-name">Assembly</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-code tech-icon"></i>
+                <span class="tech-name">Scheme</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-react-original tech-icon"></i>
+                <span class="tech-name">React</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-react-original tech-icon"></i>
+                <span class="tech-name">React Native</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-nodejs-plain tech-icon"></i>
+                <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-express-original tech-icon"></i>
+                <span class="tech-name">Express.js</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-python-plain tech-icon"></i>
+                <span class="tech-name">Pandas</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-python-plain tech-icon"></i>
+                <span class="tech-name">PyTorch</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-docker-plain tech-icon"></i>
+                <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-aws tech-icon"></i>
+                <span class="tech-name">AWS</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-git-plain tech-icon"></i>
+                <span class="tech-name">Git</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-linux-plain tech-icon"></i>
+                <span class="tech-name">Linux</span>
+            </div>
+            <div class="tech-item">
+                <i class="devicon-matlab-plain tech-icon"></i>
+                <span class="tech-name">MATLAB</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <a href="assets/resume.pdf" class="resume-link" target="_blank">
+                <i class="fas fa-file-pdf"></i>
+                View My Resume
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Jordanburton919@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(647) 569-3574</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jordan-burton-2004-uwo" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Jordanb1618" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jordan Burton. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
